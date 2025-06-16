@@ -1,0 +1,25 @@
+
+<robot name="cylinder_pillar">
+  <link name="link">
+    <inertial>
+      <origin xyz="0 0 0"/>
+      <mass value="1.5"/>
+      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.5"/>
+      <geometry>
+        <cylinder length="1" radius="0.2"/>
+      </geometry>
+      <material name="metal_grey">
+        <color rgba="0.6 0.6 0.6 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.5"/>
+      <geometry>
+        <cylinder length="1" radius="0.2"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

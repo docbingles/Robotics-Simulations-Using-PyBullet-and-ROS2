@@ -1,0 +1,25 @@
+
+<robot name="wall">
+  <link name="link">
+    <inertial>
+      <origin xyz="0 0 0"/>
+      <mass value="3"/>
+      <inertia ixx="0.3" ixy="0" ixz="0" iyy="0.3" iyz="0" izz="0.3"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.75"/>
+      <geometry>
+        <box size="1 0.1 1.5"/>
+      </geometry>
+      <material name="grey_wall">
+        <color rgba="0.5 0.5 0.5 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.75"/>
+      <geometry>
+        <box size="1 0.1 1.5"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
